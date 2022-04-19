@@ -37,10 +37,10 @@ $ npm install
 ```
 4. Register slash commands.
 ```sh
-$ npm run register
+$ {prefix}deployslash
 ```
 5. start the bot normally.
 ```sh
-$ npm run start
+$ npm start
 ```
 > © 2022 Lazy Dev
