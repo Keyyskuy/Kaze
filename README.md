@@ -1,14 +1,14 @@
-<h1 align="center">Hutao Discord Bot</h1>
+<h1 align="center">Kaze Discord Bot</h1>
 <br />
 <p align="center">
-        <img src="https://cdn.discordapp.com/attachments/935096019555844128/953245809074405386/huta.jpg" alt="Komi" width="1160" height="290">
+        <img src="https://cdn.discordapp.com/attachments/956774769276104736/966003509633904720/banner_github.jpg" alt="Kaze" width="1160" height="290">
     </a>
 </p>
 <p align="center">
-        HuTao is a advanced powerfull with many features.
+        Kaze is a advanced powerfull with many features.
     </p>
     <p align="center">
-        <a href="https://discord.com/api/oauth2/authorize?client_id=945181447457734676&permissions=1266952436215&scope=bot%20applications.commands">🔗Invite me!</a>
+        <a href="https://discord.com/api/oauth2/authorize?client_id=965463402816348230&permissions=0&scope=bot%20applications.commands">🔗Invite me!</a>
 </p>
 <p align="center">
         <a href="https://discord.gg/isei"><img src="https://img.shields.io/discord/675998580019953675?color=5865F2&logo=discord&logoColor=white" alt="Discord Server" /></a>
