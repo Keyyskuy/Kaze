@@ -1,0 +1,48 @@
+{
+   "token": "",
+   "prefix": ">",
+   "ownerIDS": [
+      "682939235828760611"
+   ],
+   "fnbr": "",
+   "fortnitetracker": "",
+   "memer_api": "kscKTKHssTj",
+   "status": {
+      "text": "{prefix}help | {membercount} users! | {guildcount} servants!",
+      "type": "PLAYING",
+      "url": "https://twitch.tv/keyyskuy",
+      "text2": "By : Keyy | wartegdesign.my.id | Open Commission Design Grafis & Bot Dev"
+   },
+   "clientsettings": {
+      "nodes": [
+         {
+            "host": "127.0.0.1",
+            "port": 2333,
+            "password": "doggystyle12"
+         }
+      ]
+   },
+   "spotify": {
+      "clientSecret": "e5c433a8fcd04854aaf28a655e68b6bc",
+      "clientID": "0ad374968cbb4dcd871872e3abfb724c"
+   },
+   "settings": {
+      "COMMENT": "time_delay 0 === insta leave",
+      "leaveOnEmpty_Channel": {
+         "enabled": true,
+         "time_delay": 30000
+      },
+      "LeaveOnEmpty_Queue": {
+         "enabled": true,
+         "time_delay": 30000
+      },
+      "selfDeaf": true
+   },
+   "lyricssettings": {
+      "lyrics_finder": true,
+      "ksoft_api": {
+         "use_this_instead": true,
+         "api_key": "DISABLED"
+      }
+   }
+}

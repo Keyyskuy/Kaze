@@ -1,0 +1,78 @@
+{
+  "msg": {
+    "COMMENT": "IF YOU DECIDE TO USE CUSTOM EMOJIS, USE THE NAME AND THE ID IN MSG, EXAMPLE: ⬜ --> <:progressbar_left_filled:818558865268408341>",
+
+    "ERROR" : "<a:no:859388931894935613>",
+    "SUCCESS" : "<a:yes:859388948026621982>",
+
+    "disabled" : "<a:no:859388931894935613>",
+    "enabled" : "<a:yes:859388948026621982>",
+
+    "progress_bar": {
+      "leftindicator": "[",
+      "rightindicator": "]",
+
+      "emptyframe": "⬜",
+      "filledframe": "🟧"
+    },
+
+    "playing": "<:playing:956774846245785631>",
+    "pruning": "<:pruning:956774848091291699>",
+    "equalizer": "<:equalizer:956774844962308116>",
+    "cleared": "<:cleared:956774845054595102>",
+    "leave_on_empty": "<:voice:956774848175153162>",
+    "time": "<:time:956774848565219388>",
+    "premium": "<:premium:956774850595287040>",
+    "song_by": "<:info:956774849915809834>",
+    "setup": "<:setup:956774846778474528>",
+    "dj": "<:dj:956774845314646016>",
+    "bot": "<:bot:956774848087064666>",
+    "search": "<:search:956774846820409394>",
+    "resume": "<:resume:956774846493241404>",
+    "pause": "<:pause:956774841191645264>",
+    "lyrics": "<:lyrics:956774847759917076>",
+    "disk": "<:dis:956774848472961084>",
+    "ping": "<:ping:956774847193690162>",
+
+    "rewind": "<:rewind:956774847004958750>",
+    "forward": "<:forward:956774845528555520>",
+    "pause_resume": "<:pause_resume:956774846254182410>",
+    "stop": "<:stop:956774843901173800>",
+    "previous_track": "<:previous_track:956774848963698748>",
+    "skip_track": "<:skip_track:956774847852204102>",
+    "replay_track": "<:repeat_mode:956774846782664754>",
+    "reduce_volume": "<:reduce_volume:956774846501638174>",
+    "raise_volume": "<:raise_volume:956774848519082005>",
+    "toggle_mute": "<:toggle_mute:956774847910928385>",
+    "repeat_mode": "<:repeat_mode:956774846782664754>",
+    "autoplay_mode": "<:autoplay_mode:956774841262948442>",
+    "shuffle": "<:shuffle:956774848405848094>",
+    "show_queue": "<:show_queue:956774848389070898>",
+    "show_current_track": "<:show_current_track:956774849454432336>"
+  },
+  "react": {
+
+    "COMMENT": "IF YOU DECIDE TO USE CUSTOM EMOJIS, USE JUST THE ID IN REACT, EXAMPLE: ⏪ --> 818558865268408341",
+
+    "ERROR" : "833101993668771842",
+    "SUCCESS" : "833101995723194437",
+
+
+    "rewind": "<:rewind:956774847004958750>",
+    "forward": "<:forward:956774845528555520>",
+    "pause_resume": "<:pause_resume:956774846254182410>",
+    "stop": "<:stop:956774843901173800>",
+    "previous_track": "<:previous_track:956774848963698748>",
+    "skip_track": "<:skip_track:956774847852204102>",
+    "replay_track": "<:repeat_mode:956774846782664754>",
+    "reduce_volume": "<:reduce_volume:956774846501638174>",
+    "raise_volume": "<:raise_volume:956774848519082005>",
+    "toggle_mute": "<:toggle_mute:956774847910928385>",
+    "repeat_mode": "<:repeat_mode:956774846782664754>",
+    "autoplay_mode": "<:autoplay_mode:956774841262948442>",
+    "shuffle": "<:shuffle:956774848405848094>",
+    "show_queue": "<:show_queue:956774848389070898>",
+    "show_current_track": "<:show_current_track:956774849454432336>"
+  }
+
+}
