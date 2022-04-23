@@ -312,7 +312,7 @@ module.exports = async (client) => {
         if(leaves < 0) leaves *= -1;
         if(invites < 0) invites *= -1;
         let realinvites = invites - fake - leaves;
-        invitemessage = `Invited by ${inviter.tag ? `**${inviter.tag}**` : `<@${inviter.id}>`}\n<:Like:857334024087011378> **${realinvites} Invite${realinvites == 1 ? "" : "s"}**\n[<:joines:866356465299488809> ${invites} Joins | <:leaves:866356598356049930> ${leaves} Leaves | <a:no:859388931894935613> ${fake} Fakes]`;
+        invitemessage = `Invited by ${inviter.tag ? `**${inviter.tag}**` : `<@${inviter.id}>`}\n**${realinvites} Invite${realinvites == 1 ? "" : "s"}**\n[<a:yes:859388948026621982> ${invites} Joins | <:leaves:866356598356049930> ${leaves} Leaves | <a:no:859388931894935613> ${fake} Fakes]`;
       } 
       else if(invite){
         invitemessage = `Invited by an **Unknown Member**`
