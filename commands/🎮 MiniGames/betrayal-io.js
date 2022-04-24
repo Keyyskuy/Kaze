@@ -70,7 +70,7 @@ module.exports = {
           message.reply(eval(client.la[ls]["cmds"]["minigames"]["betrayal-io"]["variable4"]));
         })
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply(new Discord.MessageEmbed()
         .setColor(es.wrongcolor)
         .setFooter(client.getFooter(es))

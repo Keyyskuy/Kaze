@@ -86,7 +86,7 @@ module.exports = {
       await message.reply({embeds : [fastembed2], files: [attachment]});
       await tempmsg.delete().catch(() => null)
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds : [new MessageEmbed()
         .setColor(es.wrongcolor)
         .setFooter(client.getFooter(es))

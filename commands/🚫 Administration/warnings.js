@@ -113,7 +113,7 @@ module.exports = {
         ]});
       }
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds :[new MessageEmbed()
         .setColor(es.wrongcolor).setFooter(client.getFooter(es))
         .setTitle(eval(client.la[ls]["cmds"]["administration"]["warnings"]["variable11"]))

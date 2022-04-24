@@ -47,12 +47,6 @@ module.exports = {
             description: `${GuildSettings.FILTER ? "❌ Disable FILTER Commands" : "Enable FILTER Commands"}`
           },
           {
-            label: "CUSTOMQUEUE",
-            value: "CUSTOMQUEUE",
-            emoji: "⚜️",
-            description: `${GuildSettings.CUSTOMQUEUE ? "❌ Disable CUSTOM-QUEUE Commands" : "Enable CUSTOM-QUEUE Commands"}`
-          },
-          {
             label: "PROGRAMMING",
             value: "PROGRAMMING",
             emoji: "⌨️",
@@ -136,7 +130,7 @@ module.exports = {
         ], components: []}).catch((e)=>{})
       });
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds: [new MessageEmbed()
         .setColor(es.wrongcolor).setFooter(client.getFooter(es))
         .setTitle(client.la[ls].common.erroroccur)

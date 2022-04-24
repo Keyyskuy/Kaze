@@ -1,3 +1,3 @@
 {
-    "mongoUri": ""
+    "mongoUri": "mongodb://doggy:Rafi190895@doggy-shard-00-00.sp0fs.mongodb.net:27017,doggy-shard-00-01.sp0fs.mongodb.net:27017,doggy-shard-00-02.sp0fs.mongodb.net:27017/isekai1?ssl=true&replicaSet=atlas-iqbdg9-shard-0&authSource=admin&retryWrites=true&w=majority"
 }

@@ -36,7 +36,7 @@ module.exports = {
         ]});
       })
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
     }
   }
 }

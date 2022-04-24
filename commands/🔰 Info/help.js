@@ -154,12 +154,6 @@ module.exports = {
             description: "Commands to add Filters to the Music"
           },
           {
-            label: "Customqueue",
-            value: "Customqueue",
-            emoji: "⚜️",
-            description: "Commands to Save Queues and Manage them"
-          },
-          {
             label: "Admin",
             value: "Admin",
             emoji: "🚫",
@@ -328,17 +322,16 @@ Made by [**Lazy Development**](https://dsc.gg/devraiden)`)
                   case "school": index = 3; break;
                   case "music": index = 4; break;
                   case "filter": index = 5; break;
-                  case "customqueue": index = 6; break;
-                  case "admin": index = 7; break;
-                  case "setup": index = 8; break;
-                  case "settings": index = 9; break;
-                  case "owner": index = 10; break;
-                  case "programming": index = 11; break;
-                  case "ranking": index = 12; break;
-                  case "soundboard": index = 13; break;
-                  case "voice": index = 14; break;
-                  case "fun": index = 15; break;
-                  case "minigames": index = 16; break;
+                  case "admin": index = 6; break;
+                  case "setup": index = 7; break;
+                  case "settings": index = 8; break;
+                  case "owner": index = 9; break;
+                  case "programming": index = 10; break;
+                  case "ranking": index = 11; break;
+                  case "soundboard": index = 12; break;
+                  case "voice": index = 13; break;
+                  case "fun": index = 14; break;
+                  case "minigames": index = 15; break;
                   
 
                 }
@@ -415,14 +408,6 @@ Made by [**Lazy Development**](https://dsc.gg/devraiden)`)
           .setTitle(`[\`${client.commands.filter((cmd) => cmd.category === "👀 Filter").size}\`] Filter Commands | ${settings.FILTER ? "<a:yes:859388948026621982>" : "<a:no:859388931894935613>"}`)
           .setDescription(`> *${client.commands.filter((cmd) => cmd.category === "👀 Filter").sort((a, b) => a.name.localeCompare(b?.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}*`)
         if (!filterdisabled || settings.FILTER || settings.showdisabled) embeds.push(embed4)
-
-        //CUSTOM QUEUE COMMANDS
-        var embed5 = new MessageEmbed()
-          .setTitle(`[\`${client.commands.filter((cmd) => cmd.category === "⚜️ Custom Queue(s)").first().extracustomdesc.length}\`] ⚜️ Custom Queue(s) Commands ⚜️ | ${settings.CUSTOMQUEUE ? "<a:yes:859388948026621982>" : "<a:no:859388931894935613>"}`)
-          .setDescription(`> *${client.commands.filter((cmd) => cmd.category === "⚜️ Custom Queue(s)").first().extracustomdesc.split(",").map(i => i?.trim()).join("︲")}*`)
-          .addField("\u200b", "\u200b")
-          .addField("**Usage**", "> " + client.commands.filter((cmd) => cmd.category === "⚜️ Custom Queue(s)").first().usage)
-        if (!filterdisabled || settings.CUSTOMQUEUE || settings.showdisabled) embeds.push(embed5)
 
         //ADMINISTRATION
         var embed6 = new MessageEmbed()
@@ -523,7 +508,7 @@ Made by [**Lazy Development**](https://dsc.gg/devraiden)`)
         })
       }
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({
         embeds: [new MessageEmbed()
           .setColor(es.wrongcolor)

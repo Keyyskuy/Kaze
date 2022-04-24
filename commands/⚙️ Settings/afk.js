@@ -20,7 +20,7 @@ module.exports = {
       await client.afkDB.set(`${message.guild.id+user.id}.stamp`, Date.now());
       message.reply(`You are now afk for: ${args.join(" ")}\n> **Tipp:** *Write \`[afk]\` infront of your Message to stay afk but still write*`);
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds : [new MessageEmbed()
         .setFooter(client.getFooter(es)).setColor(es.wrongcolor)
         .setTitle(client.la[ls].common.erroroccur)

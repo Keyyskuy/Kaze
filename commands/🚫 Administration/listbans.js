@@ -56,7 +56,7 @@ module.exports = {
         let allbans = await message.guild.bans.fetch().catch(() => null).then(bans => bans.map(ban => `**${ban.user.username}**#${ban.user.discriminator} (\`${ban.user.id}\`)\n**Reason**:\n> ${ban.reason ? ban.reason : "No Reason"}\n`)); 
         swap_pages(client, message, allbans, `🔨 All Bans of **${message.guild.name}**`);      
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds: [new MessageEmbed()
         .setColor(es.wrongcolor)
         .setFooter(client.getFooter(es))

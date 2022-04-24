@@ -83,7 +83,7 @@ module.exports = {
       else {return message.reply(handlemsg(client.la[ls].cmds.info.emojiinfo.error3))
       }
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds: [new MessageEmbed()
         .setColor(es.wrongcolor)
         .setFooter(client.getFooter(es))

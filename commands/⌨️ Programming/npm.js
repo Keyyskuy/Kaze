@@ -73,7 +73,7 @@ module.exports = {
 				`**Dependencies:** ${deps && deps.length ? deps.join(", ") : "None"}`
 				].join("\n")) ]});
 		} catch (e) {
-			console.log(String(e.stack).grey.bgRed)
+			// console.log(String(e.stack).grey.bgRed)
 			return message.reply({embeds : [new MessageEmbed()
 			  .setColor(es.wrongcolor).setFooter(client.getFooter(es))
 			  .setTitle(client.la[ls].common.erroroccur)

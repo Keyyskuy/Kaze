@@ -40,7 +40,7 @@ module.exports = {
           })
         }
       } catch (e) {
-        console.log(String(e.stack).grey.bgRed)
+        // console.log(String(e.stack).grey.bgRed)
       }
       if (customavatar) {
         let embed = new Discord.MessageEmbed()
@@ -82,7 +82,7 @@ module.exports = {
         });
       }
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({
         embeds: [new MessageEmbed()
           .setColor(es.wrongcolor)

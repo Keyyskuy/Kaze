@@ -82,7 +82,7 @@ module.exports = {
       .setDescription(eval(client.la[ls]["cmds"]["economy"]["pay"]["variable10"]))
     ]});
   } catch (e) {
-    console.log(String(e.stack).grey.bgRed)
+    // console.log(String(e.stack).grey.bgRed)
     return message.reply({embeds: [new MessageEmbed()
       .setColor(ee.wrongcolor)
       .setFooter(client.getFooter(es))

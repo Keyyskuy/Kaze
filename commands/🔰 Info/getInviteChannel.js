@@ -24,7 +24,7 @@ module.exports = {
       await Channel.createInvite().then(invite => {
         if(invite.error){
           let e = invite.error;
-          console.log(String(e.stack).grey.bgRed)
+          // console.log(String(e.stack).grey.bgRed)
           return message.reply({embeds: [new MessageEmbed()
             .setColor(es.wrongcolor)
             .setFooter(client.getFooter(es))
@@ -34,7 +34,7 @@ module.exports = {
         }
         message.reply(`https://discord.gg/${invite.code}`);
       }).catch(e=>{
-        console.log(String(e.stack).grey.bgRed)
+        // console.log(String(e.stack).grey.bgRed)
         return message.reply({embeds: [new MessageEmbed()
           .setColor(es.wrongcolor)
           .setFooter(client.getFooter(es))
@@ -43,7 +43,7 @@ module.exports = {
         ]});
       })
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds: [new MessageEmbed()
         .setColor(es.wrongcolor)
         .setFooter(client.getFooter(es))

@@ -75,7 +75,7 @@ discordModals(client); // discord-modals needs your client in order to interact 
  * @param {4} Create_the_client.memer 
  *********************************************************/
 const Meme = require("memer-api");
-client.memer = new Meme(config.memer_api); // GET a TOKEN HERE: https://discord.gg/Mc2FudJkgP
+client.memer = new Meme(process.env.memer_api); // GET a TOKEN HERE: https://discord.gg/Mc2FudJkgP
 
 
 /**********************************************************

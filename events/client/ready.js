@@ -39,7 +39,7 @@ module.exports = async (client) => {
     }, 90 * 1000);
   
   } catch (e){
-    console.log(String(e.stack).grey.bgRed)
+    // console.log(String(e.stack).grey.bgRed)
   }
 }
 var state = false;

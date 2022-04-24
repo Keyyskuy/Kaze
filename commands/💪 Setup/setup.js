@@ -100,11 +100,6 @@ module.exports = {
               emoji: "#️⃣"
             },
             {
-              value: "setup-customcommand",
-              description: `Setup up to 25 different Custom-Commands`,
-              emoji: "⌨️"
-            },
-            {
               value: "setup-dailyfact",
               description: `Setup a Channel to post daily Facts`,
               emoji: "🗓"
@@ -125,11 +120,6 @@ module.exports = {
               emoji: "📖"
             },
             {
-              value: "setup-language",
-              description: `Manage the Bot's Language`,
-              emoji: "🇬🇧"
-            },
-            {
               value: "setup-leave",
               description: `Manage the Leave Messages`,
               emoji: "📤"
@@ -143,11 +133,6 @@ module.exports = {
               value: "setup-membercount",
               description: `Setup up to 25 different Member-Counters`,
               emoji: "📈"
-            },
-            {
-              value: "setup-radio",
-              description: `Setup the Radio/Waitingroom System`,
-              emoji: "📻"
             },
             {
               value: "setup-rank",
@@ -304,7 +289,7 @@ module.exports = {
           require(`./${menuoptiondata.value.toLowerCase()}`).run(client, message, args, cmduser, text, prefix, player, es, ls, GuildSettings);
         }
       } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds: [new MessageEmbed()
         .setColor(es.wrongcolor).setFooter(client.getFooter(es))
         .setTitle(client.la[ls].common.erroroccur)

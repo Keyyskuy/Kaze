@@ -72,7 +72,7 @@ module.exports = {
         .addField(client.la[ls].cmds.info.invites.field4.title, handlemsg(client.la[ls].cmds.info.invites.field4.value, {messagesCount: messagesCount}))
         .setFooter(client.getFooter(es))]});
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
     }
   }
 }

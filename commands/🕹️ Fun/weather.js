@@ -52,7 +52,7 @@ module.exports = {
                     .addField("**Wind:**", `${result[0].current.winddisplay}`, true);
                 message.reply({embeds : [embed]});
             } catch (e) {
-                console.log(String(e.stack).grey.bgRed)
+                // console.log(String(e.stack).grey.bgRed)
                 return message.reply({embeds : [new MessageEmbed()
                     .setColor(es.wrongcolor)
                     .setFooter(client.getFooter(es))

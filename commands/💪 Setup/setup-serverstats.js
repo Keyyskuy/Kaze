@@ -27,7 +27,7 @@ module.exports = {
       }).catch(() => null)
       require("./setup-membercount").run(client, message, args, cmduser, text, prefix, player, es, ls, GuildSettings);
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({
         embeds: [new MessageEmbed()
           .setColor(es.wrongcolor).setFooter(client.getFooter(es))

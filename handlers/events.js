@@ -14,7 +14,7 @@ module.exports = (client) => {
           allevents.push(eventName);
           client.on(eventName, event.bind(null, client));
         }catch(e){
-          console.log(String(e.stack).grey.bgRed)
+        // console.log(String(e.stack).grey.bgRed)
         }
       }
     }
@@ -22,17 +22,17 @@ module.exports = (client) => {
     
     console.log(`[x] :: `.magenta + `LOADED THE ${allevents.length} EVENTS after: `.brightGreen + `${Date.now() - dateNow}ms`.green)
     try {
-      const stringlength2 = 69;
-      console.log("\n")
-      console.log(`     ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓`.bold.yellow)
-      console.log(`     ┃ `.bold.yellow + " ".repeat(-1 + stringlength2 - ` ┃ `.length) + "┃".bold.yellow)
-      console.log(`     ┃ `.bold.yellow + `Logging into the BOT...`.bold.yellow + " ".repeat(-1 + stringlength2 - ` ┃ `.length - `Logging into the BOT...`.length) + "┃".bold.yellow)
-      console.log(`     ┃ `.bold.yellow + " ".repeat(-1 + stringlength2 - ` ┃ `.length) + "┃".bold.yellow)
-      console.log(`     ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛`.bold.yellow)
+  //    const stringlength2 = 69;
+   //   console.log("\n")
+   //   console.log(`     ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓`.bold.yellow)
+   //   console.log(`     ┃ `.bold.yellow + " ".repeat(-1 + stringlength2 - ` ┃ `.length) + "┃".bold.yellow)
+   //   console.log(`     ┃ `.bold.yellow + `Logging into the BOT...`.bold.yellow + " ".repeat(-1 + stringlength2 - ` ┃ `.length - `Logging into the BOT...`.length) + "┃".bold.yellow)
+   //   console.log(`     ┃ `.bold.yellow + " ".repeat(-1 + stringlength2 - ` ┃ `.length) + "┃".bold.yellow)
+   //   console.log(`     ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛`.bold.yellow)
     } catch {
       /* */ }
     } catch (e) {
-    console.log(String(e.stack).grey.bgRed)
+    // console.log(String(e.stack).grey.bgRed)
   }
 };
 

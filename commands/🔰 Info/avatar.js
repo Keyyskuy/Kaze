@@ -44,7 +44,7 @@ module.exports = {
           })
         }
       } catch (e) {
-        console.log(String(e.stack).grey.bgRed)
+        // console.log(String(e.stack).grey.bgRed)
       }
       let embed = new MessageEmbed()
         .setAuthor(handlemsg(client.la[ls].cmds.info.avatar.author, {
@@ -70,7 +70,7 @@ module.exports = {
           embeds: [embed]
         });
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds: [new MessageEmbed()
         .setColor(es.wrongcolor)
         .setFooter(client.getFooter(es))

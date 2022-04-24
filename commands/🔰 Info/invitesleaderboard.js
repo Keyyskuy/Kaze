@@ -73,7 +73,7 @@ module.exports = {
       }
       swap_pages2(client, message, embeds.map(e => e.setFooter(client.getFooter(`You are #${userrank} on the Leaderboard`))))
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds: [new MessageEmbed()
         .setColor(es.wrongcolor)
         .setFooter(client.getFooter(es))

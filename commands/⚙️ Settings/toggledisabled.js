@@ -25,7 +25,7 @@ module.exports = {
         .setDescription(`${showDisabled ? "I will now show disabled commands in the Help Menu" : "I will not show disabled Commands in the Help Menu"}`.substring(0, 2048))
       ]});
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds :[new MessageEmbed()
         .setColor(es.wrongcolor).setFooter(client.getFooter(es))
         .setTitle(client.la[ls].common.erroroccur)

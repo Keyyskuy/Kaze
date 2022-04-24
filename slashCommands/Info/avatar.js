@@ -64,7 +64,7 @@ module.exports = {
       
       interaction?.reply({ephemeral: true, embeds: [embed]});
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
     }
   }
 }

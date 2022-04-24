@@ -110,7 +110,7 @@ module.exports = {
         message.channel.messages.fetch(args[0]).catch(() => null)
           .then((msg) => msg.react(emojii).catch(() => null))
           .catch(e=>{
-            console.log(String(e.stack).grey.bgRed)
+            // console.log(String(e.stack).grey.bgRed)
             return message.reply({embeds :[new MessageEmbed()
               .setColor(es.wrongcolor)
               .setFooter(client.getFooter(es))
@@ -121,7 +121,7 @@ module.exports = {
       }
       
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds :[new MessageEmbed()
         .setColor(es.wrongcolor).setFooter(client.getFooter(es))
         .setTitle(eval(client.la[ls]["cmds"]["administration"]["react"]["variable16"]))

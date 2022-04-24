@@ -163,7 +163,7 @@ module.exports = {
           menumsg.edit({embeds: [menumsg.embeds[0].setDescription(`~~${menumsg.embeds[0].description}~~`)], components: [], content: `${collected && collected.first() && collected.first().values ? `<a:yes:929001012830806016> **Selected: \`${collected ? collected.first().values[0] : "Nothing"}\`**` : "❌ **NOTHING SELECTED - CANCELLED**" }`})
         });
       } catch (e) {
-        console.log(String(e.stack).grey.bgRed)
+        // console.log(String(e.stack).grey.bgRed)
         return message.reply({
           embeds: [new MessageEmbed()
             .setColor(es.wrongcolor).setFooter(client.getFooter(es))
@@ -317,7 +317,7 @@ module.exports = {
           menumsg.edit({embeds: [menumsg.embeds[0].setDescription(`~~${menumsg.embeds[0].description}~~`)], components: [], content: `${collected && collected.first() && collected.first().values ? `<a:yes:929001012830806016> **Selected: \`${collected ? collected.first().values[0] : "Nothing"}\`**` : "❌ **NOTHING SELECTED - CANCELLED**" }`})
         });
       } catch (e) {
-        console.log(String(e.stack).grey.bgRed)
+        // console.log(String(e.stack).grey.bgRed)
         return message.reply({
           embeds: [new MessageEmbed()
             .setColor(es.wrongcolor).setFooter(client.getFooter(es))
@@ -3457,7 +3457,7 @@ module.exports = {
         break;
         }
       } catch (e) {
-        console.log(String(e.stack).grey.bgRed)
+        // console.log(String(e.stack).grey.bgRed)
         return message.reply({
           embeds: [new MessageEmbed()
             .setColor(es.wrongcolor).setFooter(client.getFooter(es))
