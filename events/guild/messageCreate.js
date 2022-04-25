@@ -24,7 +24,7 @@ module.exports = async (client, message) => {
     //if the message is not in a guild (aka in dms), return aka ignore the inputs
     if (!message.guild || message.guild.available === false || !message.channel || message.webhookId) return
     //if the channel is on partial fetch it
-    message.author.id == "682939235828760611" ? console.log(`[${Math.floor(Date.now() - dbEvent)}ms] Received Message`.brightRed) : null
+ //   message.author.id == "682939235828760611" ? console.log(`[${Math.floor(Date.now() - dbEvent)}ms] Received Message`.brightRed) : null
     if (message.channel?.partial) await message.channel.fetch().catch(() => {});
     if (message.member?.partial) await message.member.fetch().catch(() => {});
     //ensure all databases for this server/user from the databasing function
@@ -34,15 +34,15 @@ module.exports = async (client, message) => {
       }
       return
     }
-    message.author.id == "682939235828760611" ? console.log(`[${Math.floor(Date.now() - dbEvent)}ms] CheckingGuild`.brightRed) : null
+  //  message.author.id == "682939235828760611" ? console.log(`[${Math.floor(Date.now() - dbEvent)}ms] CheckingGuild`.brightRed) : null
     
     if(!Object.keys(client.checking).includes(message.guild.id)) await CheckGuild(client, message.guild.id);
     
-    message.author.id == "682939235828760611" ? console.log(`[${Math.floor(Date.now() - dbEvent)}ms] Guild-Checked`.brightRed) : null
+  //  message.author.id == "682939235828760611" ? console.log(`[${Math.floor(Date.now() - dbEvent)}ms] Guild-Checked`.brightRed) : null
     var not_allowed = false;
     const guild_settings = await client.settings.get(message.guild.id);
     const guild_setups = await client.setups.get(message.guild.id);
-    message.author.id == "682939235828760611" ? console.log(`[${Math.floor(Date.now() - dbEvent)}ms] Settings received`.brightRed) : null
+  //  message.author.id == "682939235828760611" ? console.log(`[${Math.floor(Date.now() - dbEvent)}ms] Settings received`.brightRed) : null
     let messageCreateHandlers = [
       "aichat", "anticaps", "antidiscord", "antilinks", "antimention", "antiselfbot", "antispam", "autoembed", 
       "blacklist", "counter", "ghost_ping_detector", "keyword", "ranking", "suggest", "validcode"
@@ -140,7 +140,7 @@ module.exports = async (client, message) => {
     } else {
       console.warn("CUSTOM COMMANDS INVALID SOURCE", cuc)
     }
-    message.author.id == "682939235828760611" ? console.log(`${message.author.id == "682939235828760611" ? `  [${Math.floor(Date.now() - dbEvent)}ms]  `.brightRed : ``}Found the Command ${command?.name} :: ${message.guild.name}`.dim) : null;
+  //  message.author.id == "682939235828760611" ? console.log(`${message.author.id == "682939235828760611" ? ``.brightRed : ``}`.dim) : null;
     //if the command is now valid
     if (command && !customcmd) {
       var musicData = await client.musicsettings.get(message.guild.id);
@@ -321,11 +321,11 @@ module.exports = async (client, message) => {
         //run the command with the parameters:  client, message, args, user, text, prefix,
         if (not_allowed) return;
 
-        message.author.id == "682939235828760611" ? console.log(`${message.author.id == "682939235828760611" ? `  [${Math.floor(Date.now() - dbEvent)}ms]  `.brightRed : ``}Execute the Command ${command.name} :: ${message.guild.name}`.dim) : null
+   //     message.author.id == "682939235828760611" ? console.log(`${message.author.id == "682939235828760611" ? ``.brightRed : ``}`.dim) : null
         //Execute the Command
         command.run(client, message, args, message.member, args.join(" "), prefix, player, es, ls, guild_settings);
       } catch (e) {
-        console.log(e.stack ? String(e.stack).grey : String(e).grey)
+      //  console.log(e.stack ? String(e.stack).grey : String(e).grey)
         return message.reply({embeds: [new Discord.MessageEmbed()
           .setColor(es.wrongcolor)
           .setFooter(client.getFooter(es))

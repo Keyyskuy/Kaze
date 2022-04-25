@@ -59,7 +59,7 @@ module.exports = {
       ], files : [attachment]}).catch(() => null)
         .then(msg => tempmsg.delete().catch(() => null))
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds : [new MessageEmbed()
         .setColor(es.wrongcolor)
         .setFooter(client.getFooter(es))

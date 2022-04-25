@@ -25,7 +25,7 @@ module.exports = {
       ]}).then(async (msg) => {
         let newtime = Math.floor(Math.floor(Date.now() / 10) - oldate);
         const dbping = await client.database.ping();
-        console.log(`[${dbping}ms] | "ping" | DB PING RECEIVED`.brightRed);
+       // console.log(`[${dbping}ms] | "ping" | DB PING RECEIVED`.brightRed);
         if(newtime < 0) newtime*=-1;
         msg.edit({embeds: [new MessageEmbed()
           .setColor(es.color).setThumbnail(es.thumb ? es.footericon && (es.footericon.includes("http://") || es.footericon.includes("https://")) ? es.footericon : client.user.displayAvatarURL() : null)
@@ -34,7 +34,7 @@ module.exports = {
         ]}).catch(console.error)
       })
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds: [new MessageEmbed()
         .setColor(es.wrongcolor)
         .setFooter(client.getFooter(es))

@@ -32,7 +32,7 @@ module.exports = {
         .setDescription(`**I will now${!d ? "" : " not"} send Messages with Buttons when a Song starts**`)
       ]});
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds :[new MessageEmbed()
         .setFooter(client.getFooter(es)).setColor(es.wrongcolor)
         .setTitle(client.la[ls].common.erroroccur)

@@ -4,7 +4,7 @@ const {
 const { MessageEmbed } = require("discord.js")
 const serialize = require('serialize-javascript');
 const ee = require(`${process.cwd()}/botconfig/embed.json`);
-console.log("Welcome to SERVICE HANDLER /--/ By Keyy".yellow);
+//console.log("Welcome to SERVICE HANDLER /--/ By Keyy".yellow);
 module.exports = (client) => {
   let dateNow = Date.now();
   console.log(`${String("[x] :: ".magenta)}Now loading the Commands ...`.brightGreen)
@@ -23,12 +23,12 @@ module.exports = (client) => {
           }
           if (pull.aliases && Array.isArray(pull.aliases)) pull.aliases.forEach((alias) => client.aliases.set(alias, pull.name));
         }catch(e){
-          console.log(String(e.stack).grey.bgRed)
+          // console.log(String(e.stack).grey.bgRed)
         }
       }
     });
   } catch (e) {
-    console.log(String(e.stack).grey.bgRed)
+    // console.log(String(e.stack).grey.bgRed)
   }
 
   console.log(`[x] :: `.magenta + `LOADED THE ${client.commands.size} COMMANDS after: `.brightGreen + `${Date.now() - dateNow}ms`.green)

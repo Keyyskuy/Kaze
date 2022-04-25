@@ -57,7 +57,7 @@ module.exports = {
             }, { context: { name: file.name, category: file.category } })
             
           }catch(e){
-            console.log(String(e.stack).grey.bgRed)
+            // console.log(String(e.stack).grey.bgRed)
           }
         }
       });

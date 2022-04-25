@@ -24,7 +24,7 @@ module.exports = {
         .setDescription(`${!GuildSettings.unkowncmdmessage ? "I will now send an Information when the Command is not found" : "I will not send Information of Unknown Commands"}`.substring(0, 2048))
       ]});
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds :[new MessageEmbed()
         .setColor(es.wrongcolor).setFooter(client.getFooter(es))
         .setTitle(client.la[ls].common.erroroccur)

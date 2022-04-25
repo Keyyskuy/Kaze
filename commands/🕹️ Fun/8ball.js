@@ -55,7 +55,7 @@ const embed3 = new Discord.MessageEmbed()
         message.reply({embeds : [embed3]});
       });
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       const embed4 = new MessageEmbed()
         .setColor(es.wrongcolor)
         .setFooter(client.getFooter(es))

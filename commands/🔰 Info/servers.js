@@ -25,7 +25,7 @@ module.exports = {
       var guilds_in = client.guilds.cache.sort((a,b)=> b?.memberCount - a.memberCount).map(guild => `${handlemsg(client.la[ls].cmds.info.servers.map, { guildname: guild.name, guildid: guild.id, guildmemberCount: guild.memberCount})}\n`);
       swap_pages(client, message, guilds_in, `${handlemsg(client.la[ls].cmds.info.servers.title, { guildsin: guilds_in.length, bottag: client.user.tag})}`);
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds: [new MessageEmbed()
         .setColor(es.wrongcolor)
         .setFooter(client.getFooter(es))

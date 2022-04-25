@@ -36,7 +36,7 @@ module.exports = async (client) => {
                     message.content.includes("```py") 
                 )) message.react("858405056238714930").catch(() => null)
             } catch (e) {
-                console.log(String(e.stack).grey.bgRed)
+                // console.log(String(e.stack).grey.bgRed)
             }
         }catch (e){
             console.error(e)

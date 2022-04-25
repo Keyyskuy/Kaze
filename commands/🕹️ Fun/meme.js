@@ -45,7 +45,7 @@ module.exports = {
         if(!selected) return message.reply("**No Meme found, please retry!**")
       return message.reply({content : eval(client.la[ls]["cmds"]["fun"]["meme"]["variable1"])});
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds : [new MessageEmbed()
         .setColor(es.wrongcolor)
         .setFooter(client.getFooter(es))

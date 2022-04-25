@@ -1,8 +1,8 @@
 {
    "token": "",
-   "prefix": "",
+   "prefix": ">",
    "ownerIDS": [
-      "OwnerID"
+      "682939235828760611"
    ],
    "fnbr": "",
    "fortnitetracker": "",
@@ -18,7 +18,7 @@
          {
             "host": "127.0.0.1",
             "port": 2333,
-            "password": ""
+            "password": "doggystyle12"
          }
       ]
    },

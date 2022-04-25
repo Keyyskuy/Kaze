@@ -42,7 +42,7 @@ module.exports = {
 			  .setDescription(status === "599" ? "Network Connect Timeout Error" : STATUS_CODES[status])
 			  .setAuthor(message.author.tag, message.author.displayAvatarURL({ size: 64 }))]});
 		} catch (e) {
-			console.log(String(e.stack).grey.bgRed)
+		// console.log(String(e.stack).grey.bgRed)
 			return message.reply({embeds : [new MessageEmbed()
 			  .setColor(es.wrongcolor).setFooter(client.getFooter(es))
 			  .setTitle(client.la[ls].common.erroroccur)

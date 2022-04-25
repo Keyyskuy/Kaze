@@ -82,7 +82,7 @@ module.exports = {
           .setTitle(`<a:yes:859388948026621982> **Successfully changed the username of \`${kickmember.user.tag}\` to \`${nickname}\`**`)
         ]});
       }).catch(e=>{
-        console.log(String(e.stack).grey.bgRed)
+        // console.log(String(e.stack).grey.bgRed)
         return message.reply({embeds: [new MessageEmbed()
           .setColor(es.wrongcolor).setFooter(client.getFooter(es))
           .setTitle(eval(client.la[ls]["cmds"]["administration"]["ban"]["variable18"]))
@@ -90,7 +90,7 @@ module.exports = {
         ]});
       })
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds: [new MessageEmbed()
         .setColor(es.wrongcolor).setFooter(client.getFooter(es))
         .setTitle(eval(client.la[ls]["cmds"]["administration"]["ban"]["variable18"]))

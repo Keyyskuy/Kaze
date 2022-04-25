@@ -50,7 +50,7 @@ module.exports = {
         .setTitle(`**Successfully set the new Default Volume to: \`${volume}%\`**`)
       ]});
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds : [new MessageEmbed()
         .setFooter(client.getFooter(es)).setColor(es.wrongcolor)
         .setTitle(client.la[ls].common.erroroccur)

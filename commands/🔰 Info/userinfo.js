@@ -75,7 +75,7 @@ module.exports = {
           })
         }
       } catch (e) {
-        console.log(String(e.stack).grey.bgRed)
+        // console.log(String(e.stack).grey.bgRed)
       }
       try{
         await user.fetch().then(user => {
@@ -152,7 +152,7 @@ module.exports = {
       }
       
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds: [new MessageEmbed()
         .setColor(es.wrongcolor)
         .setFooter(client.getFooter(es))

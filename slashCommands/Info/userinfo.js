@@ -80,7 +80,7 @@ module.exports = {
 			  })
 			}
 		  } catch (e) {
-			console.log(String(e.stack).grey.bgRed)
+			// console.log(String(e.stack).grey.bgRed)
 		  }
 		  try{
 			await user.fetch().then(user => {
@@ -156,7 +156,7 @@ module.exports = {
 		  }
 		  
 		} catch (e) {
-		  console.log(String(e.stack).grey.bgRed)
+		  // console.log(String(e.stack).grey.bgRed)
 		}
     } catch (e) {
         console.log(String(e.stack).bgRed)

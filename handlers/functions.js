@@ -986,7 +986,7 @@ function shuffle(a) {
     }
     return a;
   } catch (e) {
-    console.log(String(e.stack).grey.bgRed)
+    // console.log(String(e.stack).grey.bgRed)
   }
 }
 
@@ -994,7 +994,7 @@ function formatDate(date) {
   try {
     return new Intl.DateTimeFormat("en-US").format(date);
   } catch (e) {
-    console.log(String(e.stack).grey.bgRed)
+    // console.log(String(e.stack).grey.bgRed)
   }
 }
 
@@ -1068,7 +1068,7 @@ async function delay(delayInms) {
       }, delayInms);
     });
   } catch (e) {
-    console.log(String(e.stack).grey.bgRed)
+    // console.log(String(e.stack).grey.bgRed)
   }
 }
 
@@ -1076,7 +1076,7 @@ function getRandomInt(max) {
   try {
     return Math.floor(Math.random() * Math.floor(max));
   } catch (e) {
-    console.log(String(e.stack).grey.bgRed)
+    // console.log(String(e.stack).grey.bgRed)
   }
 }
 
@@ -1084,7 +1084,7 @@ function getRandomNum(min, max) {
   try {
     return Math.floor(Math.random() * Math.floor((max - min) + min));
   } catch (e) {
-    console.log(String(e.stack).grey.bgRed)
+    // console.log(String(e.stack).grey.bgRed)
   }
 }
 
@@ -1281,7 +1281,7 @@ async function stations(client, prefix, message) {
     embeds.push(stationsembed4)
     return require("./functions").swap_pages2(client, message, embeds);
   } catch (e) {
-    console.log(String(e.stack).grey.bgRed)
+    // console.log(String(e.stack).grey.bgRed)
   }
 }
 
@@ -1290,7 +1290,7 @@ function escapeRegex(str) {
     if(!str || typeof str != "string") return "";
     return str.replace(/[.*+?^${}()|[\]\\]/g, `\\$&`);
   } catch (e) {
-    console.log(String(e.stack).grey.bgRed)
+    // console.log(String(e.stack).grey.bgRed)
   }
 }
 
@@ -1359,7 +1359,7 @@ async function autoplay(client, player, type) {
     player.queue.add(response.tracks.filter(r => r.identifier != previoustrack.identifier)[Math.floor(Math.random() * Math.floor(response.tracks.length))]);
     return player.play();
   } catch (e) {
-    console.log(String(e.stack).grey.bgRed)
+    // console.log(String(e.stack).grey.bgRed)
   }
 }
 
@@ -1374,7 +1374,7 @@ function arrayMove(array, from, to) {
     }
     return array;
   } catch (e) {
-    console.log(String(e.stack).grey.bgRed)
+    // console.log(String(e.stack).grey.bgRed)
   }
 }
 function nFormatter(num, digits = 2) {
@@ -1921,7 +1921,6 @@ async function databasing(client, guildid, userid) {
           VOICE: true,
           RANKING: true,
           PROGRAMMING: true,
-          CUSTOMQUEUE: true,
           FILTER: true,
           SOUNDBOARD: true,
           antispam: {
@@ -2546,7 +2545,6 @@ async function simple_databasing(client, guildid, userid) {
         VOICE: true,
         RANKING: true,
         PROGRAMMING: true,
-        CUSTOMQUEUE: true,
         FILTER: true,
         SOUNDBOARD: true,
 
@@ -2628,7 +2626,7 @@ async function simple_databasing(client, guildid, userid) {
     }
     return;
   } catch (e) {
-    console.log(String(e.stack).grey.bgRed)
+    // console.log(String(e.stack).grey.bgRed)
   }
 }
 

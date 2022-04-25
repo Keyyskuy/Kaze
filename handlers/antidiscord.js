@@ -336,7 +336,7 @@ module.exports = async (client) => {
                     // Do nothing ;)
                 }
             } catch (e) {
-                console.log(String(e.stack).grey.bgRed)
+                // console.log(String(e.stack).grey.bgRed)
                 return message.channel.send({
                     embeds: [new MessageEmbed()
                         .setColor(es.wrongcolor)
@@ -503,7 +503,7 @@ module.exports = async (client) => {
                     // Do nothing ;)
                 }
             } catch (e) {
-                console.log(String(e.stack).grey.bgRed)
+                // console.log(String(e.stack).grey.bgRed)
                 return message.channel.send({
                     embeds: [new MessageEmbed()
                         .setColor(es.wrongcolor)

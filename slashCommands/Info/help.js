@@ -17,7 +17,6 @@ module.exports = {
     choices: [
       ["⌨️ Programming", "⌨️ Programming"], 
       ["⚙️ Settings", "⚙️ Settings"], 
-      ["⚜️ Custom Queue(s) ", "⚜️ Custom Queue(s)"], 
       ["🎤 Voice", "🎤 Voice"], 
       ["🎮 MiniGames", "🎮 MiniGames"], 
       ["🎶 Music", "🎶 Music"], 
@@ -28,7 +27,6 @@ module.exports = {
       ["💸 Economy", "💸 Economy"], 
       ["📈 Ranking", "📈 Ranking"], 
       ["🔊 Soundboard", "🔊 Soundboard"], 
-   // ["🔞 NSFW", "🔞 NSFW"], 
       ["🔰 Info", "🔰 Info"], 
       ["🕹️ Fun", "🕹️ Fun"], 
       ["🚫 Administration", "🚫 Administration"], 
@@ -138,7 +136,7 @@ module.exports = {
       } 
       interaction?.reply({embeds: allembeds, ephemeral: true})
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
     }
   }
 }

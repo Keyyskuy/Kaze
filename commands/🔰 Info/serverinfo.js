@@ -127,7 +127,7 @@ module.exports = {
       if(embeds.length == 1) return message.reply({embeds});
       return swap_pages2(client, message, embeds);
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds: [new MessageEmbed()
         .setColor(es.wrongcolor)
         .setFooter(client.getFooter(es))

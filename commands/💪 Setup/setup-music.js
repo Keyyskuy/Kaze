@@ -68,7 +68,7 @@ module.exports = {
           return message.reply(`**Successfully setupped the Music System in:** <#${channel.id}>`)
         });
         } catch (e) {
-            console.log(String(e.stack).grey.bgRed)
+            // console.log(String(e.stack).grey.bgRed)
             return message.reply({embeds: [new MessageEmbed()
                 .setColor(es.wrongcolor)
     						.setFooter(client.getFooter(es))

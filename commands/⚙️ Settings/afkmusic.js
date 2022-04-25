@@ -23,7 +23,7 @@ module.exports = {
         .setDescription(eval(client.la[ls]["cmds"]["settings"]["afk"]["variable2"]))
       ]});
     } catch (e) {
-      console.log(String(e.stack).grey.bgRed)
+      // console.log(String(e.stack).grey.bgRed)
       return message.reply({embeds : [new MessageEmbed()
         .setFooter(client.getFooter(es)).setColor(es.wrongcolor)
         .setTitle(client.la[ls].common.erroroccur)

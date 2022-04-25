@@ -85,7 +85,7 @@ module.exports = {
             ]}).catch(console.error)
           });          
     } catch (e) {
-        console.log(String(e.stack).grey.bgRed)
+        // console.log(String(e.stack).grey.bgRed)
         return message.reply({embeds: [new Discord.MessageEmbed()
           .setColor(es.wrongcolor)
           .setFooter(client.getFooter(es))
