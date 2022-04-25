@@ -4,3 +4,4 @@ node_modules
 dist
 srcd
 package-lock.json
+.gitignore
